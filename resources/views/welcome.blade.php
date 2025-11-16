@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-style-mode" content="1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
-    <title>Mighty - Creative Portfolio Template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/tlogo.png">
+    <title>Fadhil-Roshan | Portfolio</title>
     <link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" href="assets/css/vendor/metismenu.css">
@@ -19,27 +19,333 @@
     overflow: visible !important;
 }
 
+/* Desktop – your original design stays the same */
 .rts-reveal-image-one {
     position: absolute !important;
-    top: -90px !important;     /* move up */
-    right: -80px;
-    width: 50% !important;     /* resize */
+    top: -90px !important;
+    right: -80px !important;
+    width: 50% !important;
     height: auto !important;
-    
 }
+
+/* Tablet (992px and down) – reduce floating and adjust size */
 @media (max-width: 992px) {
     .rts-reveal-image-one {
-        top: -160px !important;
-        width: 65% !important;
-        right: 0;
+        top: -40px !important;
+        right: -20px !important;
+        width: 55% !important;
+    }
+}
+
+/* Mobile – keep centered, smaller & clean placement */
+@media (max-width: 576px) {
+    .rts-reveal-image-one {
+        position: absolute !important;
+        top: -40px !important;       /* adjust higher/lower */
+        right: -10px !important;     /* closer to edge */
+        width: 35% !important;       /* smaller size */
+        height: auto !important;
+        transform: none !important;  /* remove centering */
+        left: auto !important;
     }
 }
 
 @media (max-width: 576px) {
+    .thumbnail-img-banner-three {
+        overflow: visible !important;
+    }
+}
+
+/* Brand wrapper container */
+.brand-wrapper-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+/* Brand wrapper with scroll animation */
+.brand-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: fit-content;
+}
+
+.brand-scroll {
+    animation: scroll-logos 30s linear infinite;
+}
+
+/* Pause animation on hover */
+.brand-wrapper-container:hover .brand-scroll {
+    animation-play-state: paused;
+}
+
+/* Scroll animation keyframes */
+@keyframes scroll-logos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Logo styling */
+.brand-logo {
+    height: 130px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    
+    /* White filter applied by default */
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+}
+
+/* Hover effect - show original colors */
+.brand-logo:hover {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .brand-logo {
+        height: 40px;
+        max-width: 120px;
+    }
+    
+    .brand-wrapper {
+        gap: 40px;
+    }
+    
+    @keyframes scroll-logos {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-logo {
+        height: 35px;
+        max-width: 100px;
+    }
+    
+    .brand-wrapper {
+        gap: 30px;
+    }
+}
+.footer-right-two .contact-information.input {
+    margin-top: 80px; !important;
+    padding-top: 0 !important;
+}
+
+.footer-right-two .contact-information.input .title {
+    margin-top: 0 !important;
+}
+.footer-left-two .logo .text-logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    font-family: inherit;
+}
+
+.footer-left-two .logo {
+    display: inline-block;
+}
+
+/* Marketing Professional Text Styling */
+.rts_hero__title span {
+    display: inline-block;
+    margin-left: -90px; /* Moves text to the right */
+    font-size: 0.75em; /* Reduces size to 75% of parent */
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .rts_hero__title span {
+        margin-left: 25px;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 576px) {
+    .rts_hero__title span {
+        margin-left: 15px;
+        font-size: 0.65em;
+    }
+}
+/* Blog Image Overlay Styling */
+.single-blog-area .thumbnail {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.single-blog-area .image-box-blog {
+    position: relative;
+}
+
+/* Black overlay */
+.single-blog-area .thumbnail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+/* Hover effect - darken more on hover */
+.single-blog-area .thumbnail:hover::before {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Image zoom on hover */
+.single-blog-area .thumbnail:hover img {
+    transform: scale(1.1);
+}
+
+.single-blog-area .image-box-blog img {
+    transition: transform 0.4s ease;
+}
+
+/* Make sure content is above overlay */
+.single-blog-area .inner-content {
+    position: relative;
+    z-index: 2;
+}
+/* Skills Animation - One by One from Top to Bottom */
+.skill-area-h3 {
+    overflow: hidden;
+}
+
+.skill-area-h3 .single {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInDown 0.6s ease forwards;
+}
+
+/* Delay each item */
+.skill-area-h3:nth-of-type(1) .single:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.skill-area-h3:nth-of-type(1) .single:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.skill-area-h3:nth-of-type(2) .single:nth-child(1) {
+    animation-delay: 0.6s;
+}
+
+.skill-area-h3:nth-of-type(2) .single:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+/* Alternative selector if the above doesn't work */
+.skill-area-h3:first-child .single:first-child {
+    animation-delay: 0.2s;
+}
+
+.skill-area-h3:first-child .single:last-child {
+    animation-delay: 0.4s;
+}
+
+.skill-area-h3.mt--30 .single:first-child {
+    animation-delay: 0.6s;
+}
+
+.skill-area-h3.mt--30 .single:last-child {
+    animation-delay: 0.8s;
+}
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Trigger animation when element is in viewport */
+@media (prefers-reduced-motion: no-preference) {
+    .skill-area-h3 .single {
+        animation-play-state: paused;
+    }
+    
+    .skill-area-h3.in-view .single {
+        animation-play-state: running;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    @keyframes slideInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+.single-case-main-wrapper .inner-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.single-case-main-wrapper .inner-content span,
+.single-case-main-wrapper .inner-content a {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+/* Hide mobile hero image by default */
+.hero-mobile-img {
+    display: none;
+}
+
+/* Hide desktop floating image on mobile */
+@media (max-width: 768px) {
     .rts-reveal-image-one {
-        top: -10px !important;
-        width: 60% !important;
-        right: 0;
+        display: none !important;
+    }
+
+    .hero-mobile-img {
+        display: block;
+        width: 80%;
+        margin: 20px auto 0;
+        border-radius: 12px;
+        height: auto;
+    }
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+    .hero-mobile-img {
+        width: 90%;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 576px) {
+    .click-down-bottom {
+        display: none !important;
     }
 }
 
@@ -54,9 +360,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="inner">
-                        <a href="index.html" class="logo-area">
-                            <img src="assets/images/logo/03.svg" alt="logo-area">
-                        </a>
+                        <a href="{{ url('/') }}" class="loog">
+                                <h2 style="margin: 0; font-size: 28px; font-weight: 700; color: #ffffff;">Fadhil Roshan.</h2>
+                            </a>
                         <a href="index.html" class="logo-area-white">
                             <img src="assets/images/logo/02.svg" alt="logo-area">
                         </a>
@@ -116,15 +422,14 @@
                                             <div class="rts-fs--contacts col-12 col-md-6">
                                                 <div class="contact-inner">
                                                     <div class="contact-information">
-                                                        <h2 class="heading-title">Our Office</h2>
+                                                        <h2 class="heading-title">Contact Me</h2>
                                                         <div class="address">
                                                             <ul>
                                                                 <li>
-                                                                    <p>98 Post St, Maxuel Street, Frankfurt</p>
+                                                                    <p>Deira,Dubai
+</p>
                                                                 </li>
-                                                                <li>
-                                                                    <p>575 Market St, Maxuel Street, Frankfurt</p>
-                                                                </li>
+                                                              
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -132,16 +437,16 @@
                                                         <h2 class="heading-title">Get In Touch</h2>
                                                         <div class="contact">
                                                             <ul>
-                                                                <li><a href="mailto:information.mighty.com" class="mail">information.mighty.com</a></li>
-                                                                <li><a href="tel:28586235932159" class="number">+2858 62359 32159</a></li>
+                                                                <li><a href="fadhilroshan22@gmail.com " class="mail">fadhilroshan22@gmail.com </a></li>
+                                                                <li><a href="tel:+971554074525" class="number">+971554074525‬
+</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="rts-social-area-one">
                                                             <ul>
-                                                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                                                                <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
+                                                                 <li><a href="https://wa.me/918943068962" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a href="https://www.instagram.com/fadhil__roshan" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/fadhil-roshan-157819245/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -176,7 +481,7 @@
                     </path>
                 </defs>
                 <text font-size="11.75">
-                    <textPath xlink:href="#circle">Project SHowcase • Project SHowcase •</textPath>
+                    <textPath xlink:href="#circle">Fadhil Roshan • Portfolio •</textPath>
                 </text>
             </svg>
             <i class="fa-solid fa-star-sharp"></i>
@@ -187,12 +492,15 @@
                 <div class="col-lg-6 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
                     <div class="banner-content-wrapper-three">
                         <h2 class="title rts_hero__title">Fadhil <br>
-                            <span>Marketing Proffessional</span>
+                            
                             Roshan
                         </h2>
                         <p class="disc hero__sub-title">
                             A Marketing Proffessional enthusiast with a strong passion for <br>the PR industry, I excel in content creations, particularly <br>in areas such as Editing and Graphic design
                         </p>
+                        <!-- Mobile Hero Image -->
+<img src="assets/images/banner/10.png" class="hero-mobile-img" alt="Fadhil Roshan">
+
                         <a href="#about" class="click-down-bottom">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="41" viewBox="0 0 14 41" fill="none">
                                 <g clip-path="url(#clip0_353_1191)">
@@ -217,10 +525,9 @@
         <!-- social share banner left three -->
         <div class="social-share-horizental scroll-down-circle">
             <ul>
-                <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                 <li><a href="https://wa.me/918943068962" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a href="https://www.instagram.com/fadhil__roshan" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/fadhil-roshan-157819245/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
             <p>Follow Me</p>
         </div>
@@ -250,7 +557,9 @@
                             <h2 class="title quote">I Drive Growth & Define Brands.</h2>
                         </div>
                         <p class="disc rts-text-anim">
-                            I leverage this blend of creative skills and strategic communication to help brands define their story and thrive in the constantly evolving media landscape.
+                            My work is rooted in understanding how brands communicate, how people connect, and how ideas influence perception.
+By combining strategic thinking, creative design, and strong content development, I help brands craft their identity and express it across digital and social platforms.
+From shaping the message to designing the visuals, I focus on creating work that not only captures attention but also builds trust, strengthens relationships, and drives meaningful long-term growth.
                         </p>
                         <div class="skill-area-h3 rts-slide-up-gsap">
                             <!-- single -->
@@ -279,7 +588,7 @@
                             </div>
                             <!-- single end -->
                         </div>
-                        <a href="about.html" class="learn-more-btn">Learn More <i
+                        <a href="{{ url('/about') }}" class="learn-more-btn">More About Us<i
                                 class="fa-solid fa-arrow-up-right"></i></a>
                     </div>
                 </div>
@@ -312,7 +621,7 @@
                             <div class="number-area">
                                 <span>01</span>
                             </div>
-                            <a href="service-details.html" class="title-area">
+                            <a href="{{ url('/about') }}" class="title-area">
                                 <h3 class="title">
                                     Business Development <br> Executive
                                 </h3>
@@ -340,11 +649,11 @@
                                 <!-- sm service area end -->
                             </div>
                             <div class="end-arrow discription-area">
-                                <a href="service-details.html">
+                                <a href="{{ url('/about') }}">
                                     <i class="fa-regular fa-arrow-right"></i>
                                 </a>
                             </div>
-                            <div class="rts-service-hover-bg" style="background-image: url(assets/images/service/01.png);"></div>
+                            <div class="rts-service-hover-bg" ></div>
                         </div>
                         <!-- ingle service area end -->
                         <!-- ingle service area start -->
@@ -352,7 +661,7 @@
                             <div class="number-area">
                                 <span>02</span>
                             </div>
-                            <a href="service-details.html" class="title-area">
+                            <a href="{{ url('/about') }}" class="title-area">
                                 <h3 class="title">
                                     Social <br>Media<br> Executive
                                 </h3>
@@ -379,11 +688,11 @@
                                 <!-- sm service area end -->
                             </div>
                             <div class="end-arrow discription-area">
-                                <a href="service-details.html">
+                                <a href="{{ url('/about') }}">
                                     <i class="fa-regular fa-arrow-right"></i>
                                 </a>
                             </div>
-                            <div class="rts-service-hover-bg" style="background-image: url(assets/images/service/02.png);"></div>
+                            <div class="rts-service-hover-bg" ></div>
                         </div>
                         <!-- ingle service area end -->
                         <!-- ingle service area start -->
@@ -391,7 +700,7 @@
                             <div class="number-area">
                                 <span>03</span>
                             </div>
-                            <a href="service-details.html" class="title-area">
+                            <a href="{{ url('/about') }}" class="title-area">
                                 <h3 class="title">
                                     Assistant <br>Event <BR>Manager
                                 </h3>
@@ -419,11 +728,11 @@
                                 <!-- sm service area end -->
                             </div>
                             <div class="end-arrow discription-area">
-                                <a href="service-details.html">
+                                <a href="{{ url('/about') }}">
                                     <i class="fa-regular fa-arrow-right"></i>
                                 </a>
                             </div>
-                            <div class="rts-service-hover-bg" style="background-image: url(assets/images/service/03.png);"></div>
+                            <div class="rts-service-hover-bg" ></div>
                         </div>
                         <!-- ingle service area end -->
 
@@ -464,8 +773,8 @@
 
                         </a> <!-- /.pli-image-link -->
                         <div class="inner-content">
-                            <span>web design</span>
-                            <a href="portfolio-details.html">Website Build Maintenance </a>
+                            <span>Develop</span>
+                            <a href="{{ url('/services') }}">Business Developing </a>
                         </div>
                     </div>
                     <!-- wrapper case inner start -->
@@ -481,8 +790,8 @@
 
                         </a> <!-- /.pli-image-link -->
                         <div class="inner-content">
-                            <span>web design</span>
-                            <a href="portfolio-details.html">Ongoing Build Care and Maintenance</a>
+                            <span>Develop</span>
+                            <a href="{{ url('/services') }}">Branding</a>
                         </div>
                     </div>
                     <!-- wrapper case inner start -->
@@ -498,8 +807,8 @@
 
                         </a> <!-- /.pli-image-link -->
                         <div class="inner-content">
-                            <span>web design</span>
-                            <a href="portfolio-details.html">The Art of Website Build Maintenance</a>
+                            <span>Develop</span>
+                            <a href="{{ url('/services') }}">PR Executive</a>
                         </div>
                     </div>
                     <!-- wrapper case inner start -->
@@ -518,8 +827,8 @@
 
                         </a> <!-- /.pli-image-link -->
                         <div class="inner-content">
-                            <span>web design</span>
-                            <a href="portfolio-details.html"> Website Build Explored</a>
+                            <span>Strategy</span>
+                            <a href="{{ url('/services') }}">Content Strategy</a>
                         </div>
                     </div>
                     <!-- wrapper case inner start -->
@@ -535,8 +844,8 @@
 
                         </a> <!-- /.pli-image-link -->
                         <div class="inner-content">
-                            <span>web design</span>
-                            <a href="portfolio-details.html">Mastering Website Build Maintenance</a>
+                            <span>Perform</span>
+                            <a href="{{ url('/services') }}">Performance</a>
                         </div>
                     </div>
                     <!-- wrapper case inner start -->
@@ -552,14 +861,14 @@
 
                         </a> <!-- /.pli-image-link -->
                         <div class="inner-content">
-                            <span>web design</span>
-                            <a href="portfolio-details.html">Mastering Website Build Maintenance</a>
+                            <span>Research</span>
+                            <a href="{{ url('/services') }}">Market Research</a>
                         </div>
                     </div>
                     <!-- wrapper case inner start -->
 
                 </div>
-                <a href="portfolio-one.html" class="learn-more-btn text-center">View All Project <i
+                <a href="{{ url('/services') }}" class="learn-more-btn text-center">View More <i
                         class="fa-solid fa-arrow-up-right"></i></a>
             </div>
         </div>
@@ -591,7 +900,7 @@
                             <div class="number-area">
                                 <span>01</span>
                             </div>
-                            <a href="service-details.html" class="title-area">
+                            <a href="{{ url('/about') }}" class="title-area">
                                 <h3 class="title">
                                     MA-Advertising and <br>Public
 Relations
@@ -621,11 +930,11 @@ Relations
                                 <!-- sm service area end -->
                             </div>
                             <div class="end-arrow discription-area">
-                                <a href="service-details.html">
+                                <a href="{{ url('/about') }}">
                                     <i class="fa-regular fa-arrow-right"></i>
                                 </a>
                             </div>
-                            <div class="rts-service-hover-bg" style="background-image: url(assets/images/service/01.png);"></div>
+                            <div class="rts-service-hover-bg" ></div>
                         </div>
                         <!-- ingle service area end -->
                         <!-- ingle service area start -->
@@ -633,7 +942,7 @@ Relations
                             <div class="number-area">
                                 <span>02</span>
                             </div>
-                            <a href="service-details.html" class="title-area">
+                            <a href="{{ url('/about') }}" class="title-area">
                                 <h3 class="title">
                                     BA <br>(JMC)
                                 </h3>
@@ -660,11 +969,11 @@ Relations
                                 <!-- sm service area end -->
                             </div>
                             <div class="end-arrow discription-area">
-                                <a href="service-details.html">
+                                <a href="{{ url('/about') }}">
                                     <i class="fa-regular fa-arrow-right"></i>
                                 </a>
                             </div>
-                            <div class="rts-service-hover-bg" style="background-image: url(assets/images/service/02.png);"></div>
+                            <div class="rts-service-hover-bg"></div>
                         </div>
                         <!-- ingle service area end -->
                         <!-- ingle service area start -->
@@ -672,7 +981,7 @@ Relations
                             <div class="number-area">
                                 <span>03</span>
                             </div>
-                            <a href="service-details.html" class="title-area">
+                            <a href="{{ url('/about') }}" class="title-area">
                                 <h3 class="title">
                                     Higher Secondary <br>Education
                                 </h3>
@@ -700,11 +1009,11 @@ Relations
                                 <!-- sm service area end -->
                             </div>
                             <div class="end-arrow discription-area">
-                                <a href="service-details.html">
+                                <a href="{{ url('/about') }}">
                                     <i class="fa-regular fa-arrow-right"></i>
                                 </a>
                             </div>
-                            <div class="rts-service-hover-bg" style="background-image: url(assets/images/service/03.png);"></div>
+                            <div class="rts-service-hover-bg" ></div>
                         </div>
                         <!-- ingle service area end -->
 
@@ -897,8 +1206,8 @@ Relations
                     <div class="single-blog-area">
                         <a href="blog-details.html" class="thumbnail">
                             <div class="image-box-blog">
-                                <img src="assets/images/blog/05.png" alt="blog-image">
-                                <img src="assets/images/blog/05.png" alt="blog-image">
+                                <img src="assets/images/a1.png" alt="blog-image">
+                                <img src="assets/images/a1.png" alt="blog-image">
                             </div>
                         </a>
                         <div class="inner-content">
@@ -910,9 +1219,9 @@ Relations
                                    
                                 </div>
                             </div>
-                            <a href="blog-details.html" class="title-text">
+                            <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A73405477&keywords=footballgeek&origin=RICH_QUERY_SUGGESTION&position=0&searchId=51eb51c0-05c2-4968-aa40-bb25d53b250c&sid=.Rh&spellCorrectionEnabled=false" class="title-text">
                                 <h5 class="title">
-                                    Creating Modern Digital Experiences
+                                    Creating Modern Digital <br>Experiences
                                 </h5>
                             </a>
                         </div>
@@ -924,8 +1233,8 @@ Relations
                     <div class="single-blog-area">
                         <a href="blog-details.html" class="thumbnail">
                             <div class="image-box-blog">
-                                <img src="assets/images/blog/04.jpg" alt="blog-image">
-                                <img src="assets/images/blog/04.jpg" alt="blog-image">
+                                <img src="assets/images/a2.png" alt="blog-image">
+                                <img src="assets/images/a2.png" alt="blog-image">
                             </div>
                         </a>
                         <div class="inner-content">
@@ -937,7 +1246,7 @@ Relations
                                     
                                 </div>
                             </div>
-                            <a href="blog-details.html" class="title-text">
+                            <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A73405477&keywords=footballgeek&origin=RICH_QUERY_SUGGESTION&position=0&searchId=51eb51c0-05c2-4968-aa40-bb25d53b250c&sid=.Rh&spellCorrectionEnabled=false" class="title-text">
                                 <h5 class="title">
                                     Crafting Engaging Visual <br>Stories
                                 </h5>
@@ -951,8 +1260,8 @@ Relations
                     <div class="single-blog-area">
                         <a href="blog-details.html" class="thumbnail">
                             <div class="image-box-blog">
-                                <img src="assets/images/blog/03.jpg" alt="blog-image">
-                                <img src="assets/images/blog/03.jpg" alt="blog-image">
+                                <img src="assets/images/a3.png" alt="blog-image">
+                                <img src="assets/images/a3.png" alt="blog-image">
                             </div>
                         </a>
                         <div class="inner-content">
@@ -964,9 +1273,9 @@ Relations
                                     
                                 </div>
                             </div>
-                            <a href="blog-details.html" class="title-text">
+                            <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A73405477&keywords=footballgeek&origin=RICH_QUERY_SUGGESTION&position=0&searchId=51eb51c0-05c2-4968-aa40-bb25d53b250c&sid=.Rh&spellCorrectionEnabled=false" class="title-text">
                                 <h5 class="title">
-                                    Transforming Ideas Into Impactful Content
+                                    Transforming Ideas Into <br>Impactful Content
                                 </h5>
                             </a>
                         </div>
@@ -978,89 +1287,101 @@ Relations
     </div>
     <!-- rts News area end -->
 
-    <!-- rts brand area start -->
-    <div class="rts-brand-area rts-section-gapBottom bg-dark-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="brand-style-one">
-                        <p class="title-brand">HAPPILY WORKED WITH</p>
-                        <div class="brand-wrapper">
-                            <a href="#"><img src="assets/images/ee.png" alt="brand"></a>
-                            <a href="#"><img src="assets/images/i.png" alt="brand"></a>
-                            <a href="#"><img src="assets/images/o.png" alt="brand"></a>
-                            <a href="#"><img src="assets/images/p.png" alt="brand"></a>
-                            <a href="#"><img src="assets/images/r.png" alt="brand"></a>
-                            <a href="#"><img src="assets/images/t.png" alt="brand"></a>
+   <!-- rts brand area start -->
+<div class="rts-brand-area rts-section-gapBottom bg-dark-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="brand-style-one">
+                    <p class="title-brand">HAPPILY WORKED WITH</p>
+                    <div class="brand-wrapper-container">
+                        <div class="brand-wrapper brand-scroll">
+                            <a href="#"><img src="assets/images/ee.png" alt="brand" class="brand-logo"></a>
+                            <a href="#"><img src="assets/images/i.png" alt="brand" class="brand-logo"></a>
+                            <a href="#"><img src="assets/images/o.png" alt="brand" class="brand-logo"></a>
+                            <a href="#"><img src="assets/images/p.png" alt="brand" class="brand-logo"></a>
+                            <a href="#"><img src="assets/images/r.png" alt="brand" class="brand-logo"></a>
+                            <a href="#"><img src="assets/images/t.png" alt="brand" class="brand-logo"></a>
+                            <!-- Duplicate logos for seamless loop -->
+                            <a href="#"><img src="assets/images/m.png" alt="brand" class="brand-logo"></a>
+                            <a href="#"><img src="assets/images/n.png" alt="brand" class="brand-logo"></a>
+                            <a href="#"><img src="assets/images/b.png" alt="brand" class="brand-logo"></a>
+                            <a href="#"><img src="assets/images/v.png" alt="brand" class="brand-logo"></a>
+                            <a href="#"><img src="assets/images/c.png" alt="brand" class="brand-logo"></a>
+                            <a href="#"><img src="assets/images/x.png" alt="brand" class="brand-logo"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- rts brand area end -->
+</div>
+<!-- rts brand area end -->
 
     
 
-    <div class="rts-service-area three rts-section-gap bg-dark-2 service__area-3 rts-service-revel-pro">
-        
-        <div class="container mb--50">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-faq-4">
-                        <span class="pre">FAQ</span>
-                        <h2 class="title quote">Frequently asked question?</h2>
-                    </div>
+   <div class="rts-service-area three rts-section-gap bg-dark-2 service__area-3 rts-service-revel-pro">
+    
+    <div class="container mb--50">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Updated heading style to match Experience section -->
+                <div class="title-area-left-three-large">
+                    <span>Frequently Asked Questions</span>
+                    <h2 class="title quote">FAQ's?</h2>
+                    <p class="left-m-para rts-text-anim">
+                        Find answers to common questions about my services, workflow, and creative approach.<br> If you have any other questions, feel free to reach out directly.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="container-140 mt--100">
-            <div class="row">
-                <div class="col-lg-4 rts-slide-left-gsap">
-                    <!-- faq- thumbnail -->
-                    <img src="assets/images/faq/02.png" alt="faq">
-                    <!-- faq- thumbnail end -->
-                </div>
-                <div class="col-lg-8 pr--140 pl--50 pl_md--15 pl_sm--15 pr_md--15 pr_sm--15">
-                    <div class="four-accordion-area-faq">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item rts-slide-up-gsap">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        What does your Creative Content & Social Media portfolio include?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>This section highlights my work in content creation, copywriting, and social media strategy.
+    </div>
+    <div class="container-140 mt--100">
+        <div class="row">
+            <div class="col-lg-4 rts-slide-left-gsap">
+                <!-- faq- thumbnail -->
+                <img src="assets/images/faq/02.png" alt="faq">
+                <!-- faq- thumbnail end -->
+            </div>
+            <div class="col-lg-8 pr--140 pl--50 pl_md--15 pl_sm--15 pr_md--15 pr_sm--15">
+                <div class="four-accordion-area-faq">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item rts-slide-up-gsap">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What does your Creative Content & Social Media portfolio include?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>This section highlights my work in content creation, copywriting, and social media strategy.
 It showcases posts, captions, layouts, and creative concepts designed to strengthen brand identity and improve audience engagement across platforms.</p>
-                                    </div>
                                 </div>
                             </div>
-                            <div class="accordion-item rts-slide-up-gsap">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        What can be found in your Visual Design & Brand Identity portfolio?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>Here, you’ll find my graphic design projects such as posters, branding elements, promotional creatives, and visual concepts.
-Each design reflects my clean, modern style and my ability to communicate a brand’s message through thoughtful visual storytelling.</p>
-                                    </div>
+                        </div>
+                        <div class="accordion-item rts-slide-up-gsap">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What can be found in your Visual Design & Brand Identity portfolio?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Here, you'll find my graphic design projects such as posters, branding elements, promotional creatives, and visual concepts.
+Each design reflects my clean, modern style and my ability to communicate a brand's message through thoughtful visual storytelling.</p>
                                 </div>
                             </div>
-                            <div class="accordion-item rts-slide-up-gsap">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        What type of work is featured in your Editing & Digital Media portfolio?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>This section focuses on my video and photo editing projects.
+                        </div>
+                        <div class="accordion-item rts-slide-up-gsap">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What type of work is featured in your Editing & Digital Media portfolio?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>This section focuses on my video and photo editing projects.
 It includes reels, promotional edits, color grading, transitions, and other creative enhancements that transform raw content into polished and engaging digital media.</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1069,6 +1390,7 @@ It includes reels, promotional edits, color grading, transitions, and other crea
             </div>
         </div>
     </div>
+</div>
 <!-- cta area -->
     <div class="rts-cta-4-area bg_image rts-section-gap">
         <div class="container">
@@ -1084,79 +1406,74 @@ It includes reels, promotional edits, color grading, transitions, and other crea
                             </h2>
                         </div>
 
-                        <a href="#" class="cta-border-button">Let’s Talk</a>
+                        <a href="{{ url('/contact') }}" class="cta-border-button">Let’s Talk</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- cta-wrapper -->
-    <!-- rts footer two area start -->
-    <div class="rts-footer-two-area bg-footer-2 bg_image">
-        <div class="container-n">
-            <div class="row">
-                <div class="col-lg-12 pt--130 pt_sm--60 pb--100 pb_sm--50">
-                    <div class="footer-two-wrapper-content">
-                        <!-- footer left start -->
-                        <div class="footer-left-two">
-                            <a href="index.html" class="logo">
-                                <img src="assets/images/logo/03.svg" alt="logo">
-                            </a>
-                            <p class="disc">
-                                Teor facilis porta maurs ligula vivamus <br> nullam laoreet pharetra posuere.
-                            </p>
-                            <div class="rts-social-area-one">
-                                <ul>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- footer left end -->
+   <!-- rts footer two area start -->
+<div class="rts-footer-two-area bg-footer-2 bg_image">
+    <div class="container-n">
+        <div class="row">
+            <div class="col-lg-12 pt--130 pt_sm--60 pb--100 pb_sm--50">
+                <div class="footer-two-wrapper-content">
+                   <!-- footer left start -->
+<div class="footer-left-two">
+    <a href="{{ url('/') }}" class="logo">
+        <h2 class="text-logo">Fadhil Roshan.</h2>
+    </a>
+    <p class="disc">
+        A Marketing Proffessional enthusiast with a strong <br>passion for the PR industry, I excel in content creations, <br>particularly in areas such as Editing and Graphic design
+    </p>
+    <div class="rts-social-area-one">
+        <ul>
+            <li><a href="https://wa.me/918943068962" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/fadhil__roshan" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/fadhil-roshan-157819245/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </div>
+</div>
+<!-- footer left end -->
 
-                        <!-- footer right area start -->
-                        <div class="footer-right-two">
-                            <!-- contact info -->
-                            <div class="contact-information">
-                                <h5 class="title">Contact Info</h5>
-                                <a href="#" class="map">Maxuel Street, Frankfurt <br> 2589 Germany.</a>
-                                <a href="#" class="mail">information.mighty.com</a>
-                                <a href="#" class="number">+2858 62359 32159</a>
-                            </div>
-                            <!-- contact info end -->
-                            <!-- contact info -->
-                            <div class="contact-information input">
-                                <h5 class="title">Subscribe Newsletter</h5>
-                                <p class="map">Subscribe our newsletter for future updates. don’t <br> worry we don’t
-                                    spam your email address</p>
-                                <form action="#" class="form-footer-2">
-                                    <label for="email-1"><i class="fa-regular fa-envelope"></i></label>
-                                    <input id="email-1" type="email" placeholder="Enter your email..." required>
-                                    <button type="submit">Subscribe</button>
-                                </form>
-                            </div>
-                            <!-- contact info end -->
+                    <!-- footer right area start -->
+                    <div class="footer-right-two">
+                        <!-- contact info -->
+                        <div class="contact-information">
+                            <h5 class="title">Contact Info</h5>
+                            <a href="#" class="map">Deira,Dubai
+
+                            <a href="#" class="mail">fadhilroshan22@gmail.com </a>
+                            <a href="#" class="number">+971554074525‬
+</a>
                         </div>
-                        <!-- footer right area end -->
+                        <!-- contact info end -->
+                        <!-- quick links -->
+                        <div class="contact-information input">
+                            <h5 class="title">Quick Links</h5>
+                            <a href="{{ url('/') }}" class="map">Home</a>
+                            <a href="{{ url('/about') }}" class="map">About</a>
+                            <a href="{{ url('/services') }}" class="map">Services</a>
+                            <a href="{{ url('/contact') }}" class="map">Contact</a>
+                        </div>
+                        <!-- quick links end -->
                     </div>
+                    <!-- footer right area end -->
                 </div>
-                <div class="col-lg-12">
-                    <!-- copyright-area-start -->
-                    <div class="copy-right-area-start-two">
-                        <p class="left">2023 © Mighty. All rights reserved.</p>
-                        <ul>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <!-- copyright-area-end -->
+            </div>
+            <div class="col-lg-12">
+                <!-- copyright-area-start -->
+                <div class="copy-right-area-start-two">
+                    <p class="left">2025 © FadhilRoshan. All rights reserved.</p>
+                    
                 </div>
+                <!-- copyright-area-end -->
             </div>
         </div>
     </div>
-    <!-- rts footer two area end -->
+</div>
+<!-- rts footer two area end -->
 
 
     <!-- Scripts style two -->
@@ -1241,6 +1558,39 @@ It includes reels, promotional edits, color grading, transitions, and other crea
     <script defer src="assets/js/vendor/waw.js"></script>
     <!-- custom javascripts -->
     <script defer src="assets/js/main.js"></script>
+    <script>
+        // Skills Animation - Trigger on Scroll
+document.addEventListener('DOMContentLoaded', function() {
+    const skillSections = document.querySelectorAll('.skill-area-h3');
+    
+    // Intersection Observer for scroll animation
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -100px 0px'
+    });
+    
+    // Observe each skill section
+    skillSections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+// Alternative: Trigger animation immediately on page load
+window.addEventListener('load', function() {
+    const skillSections = document.querySelectorAll('.skill-area-h3');
+    setTimeout(() => {
+        skillSections.forEach(section => {
+            section.classList.add('in-view');
+        });
+    }, 300);
+});
+        </script>
     <!-- Scripts style two End -->
 </body>
 

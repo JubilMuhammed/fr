@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-style-mode" content="1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
-    <title>Mighty - Creative Portfolio Template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/tlogo.png">
+    <title>Fadhil-Roshan | Portfolio</title>
     <link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" href="assets/css/vendor/metismenu.css">
@@ -14,317 +14,193 @@
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+.footer-right-two .contact-information.input {
+    margin-top: 80px; !important;
+    padding-top: 0 !important;
+}
 
+.footer-right-two .contact-information.input .title {
+    margin-top: 0 !important;
+}
+.footer-left-two .logo .text-logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    font-family: inherit;
+}
+
+.footer-left-two .logo {
+    display: inline-block;
+}
+/* Center the navigation menu */
+.main-header-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav-area {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-nav-1 {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* Alternative approach if the above doesn't work */
+.header-left-area {
+    flex: 0 0 auto;
+}
+
+.header-right {
+    flex: 0 0 auto;
+}
+
+/* Responsive - hide centered menu on mobile, show hamburger */
+@media (max-width: 991px) {
+    .header-nav-area {
+        display: none;
+    }
+}
+
+/* Make sure the menu items are properly styled */
+.navbar-nav-1 .menu-item {
+    margin: 0;
+}
+
+.navbar-nav-1 .menu-item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav-1 .menu-item a:hover {
+    opacity: 0.7;
+}
+      </style>
 </head>
 
 <body class="inner-page service-3 about contact-page">
 
     <!-- Scripts style two -->
-    <!-- header area two start -->
-    <div class="rts-header-area-two header--sticky">
-        <div class="container-150">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="header-top-two">
-                        <div class="left">
-                            <p>Welcome To Professional Product Showcase</p>
+   <!-- header area two start -->
+<div class="rts-header-area-two header--sticky">
+    <div class="container-150">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="header-top-two">
+                    <div class="left">
+                        <p>Welcome To Portfolio of Fadhil Roshan</p>
+                    </div>
+                    <div class="right">
+                        <div class="male">
+                            <a href="mailto:fadhilroshan22@gmail.com">fadhilroshan22@gmail.com</a>
                         </div>
-                        <div class="right">
-                            <div class="male">
-                                <a href="mailto:webmaster@example.com">info@mighty-case.com</a>
-                            </div>
-                            <div class="number">
-                                <a href="tel:+4733378901">+258-3621.23686</a>
-                            </div>
+                        <div class="number">
+                            <a href="tel:+971554074525">+971554074525‬</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="main-header-two">
-                        <div class="header-left-area">
-                            <div class="logo-area">
-                                <a href="index.html" class="loog">
-                                    <img src="assets/images/logo/03.svg" alt="Brand__logo">
-                                </a>
-                            </div>
-                            <a href="portfolio-grid.html" class="rts-btn btn-radious btn-dark">View Showcase</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-header-two">
+                    <div class="header-left-area">
+                        <div class="logo-area">
+                            <a href="{{ url('/') }}" class="loog">
+                                <h2 style="margin: 0; font-size: 28px; font-weight: 700; color: #ffffff;">Fadhil Roshan.</h2>
+                            </a>
                         </div>
-                        <div class="header-nav-area">
-                            <nav class="nav-area drop-down-rts">
-    <ul class="navbar-nav-1">
-
-        <li class="menu-item main-nav-on">
-            <a href="{{ url('/') }}"><span class="rolling-text">Home</span></a>
-        </li>
-
-        <li class="menu-item main-nav-on">
-            <a href="{{ url('/about') }}"><span class="rolling-text">About</span></a>
-        </li>
-
-        <li class="menu-item main-nav-on">
-            <a href="{{ url('/services') }}"><span class="rolling-text">Services</span></a>
-        </li>
-
-        <li class="menu-item main-nav-on">
-            <a href="{{ url('/contact') }}"><span class="rolling-text">Contact</span></a>
-        </li>
-
-    </ul>
-</nav>
-
+                        <a href="{{ url('/contact') }}" class="rts-btn btn-radious btn-dark">Contact Me</a>
+                    </div>
+                    <div class="header-nav-area">
+                        <nav class="nav-area drop-down-rts">
+                            <ul class="navbar-nav-1">
+                                <li class="menu-item main-nav-on">
+                                    <a href="{{ url('/') }}"><span class="rolling-text">Home</span></a>
+                                </li>
+                                <li class="menu-item main-nav-on">
+                                    <a href="{{ url('/about') }}"><span class="rolling-text">About</span></a>
+                                </li>
+                                <li class="menu-item main-nav-on">
+                                    <a href="{{ url('/services') }}"><span class="rolling-text">Services</span></a>
+                                </li>
+                                <li class="menu-item main-nav-on">
+                                    <a href="{{ url('/contact') }}"><span class="rolling-text">Contact</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-right">
+                        <!-- social area start -->
+                        <div class="social-transparent-wrapper">
+                            <ul>
+                                <li><a href="https://wa.me/918943068962" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a href="https://www.instagram.com/fadhil__roshan" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/fadhil-roshan-157819245/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
                         </div>
-                        <div class="header-right">
-                            <div class="language-check">
-                                <!-- check -->
-                                <div class="input-group">
-                                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">English
-                                        <i class="fa-sharp fa-light fa-chevron-down"></i>
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Chinese</a></li>
-                                        <li><a class="dropdown-item" href="#">Spanish</a></li>
-                                        <li><a class="dropdown-item" href="#">Arabic</a></li>
-                                        <li><a class="dropdown-item" href="#">Portuguese</a></li>
-                                    </ul>
-                                </div>
-                                <!-- check -->
-                            </div>
-                            <!-- social area start -->
-                            <div class="social-transparent-wrapper">
-                                <ul>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
-                                </ul>
-                            </div>
-                            <!-- social area end -->
-                            <div class="menu-btn">
-
-                                <div class="rts-offcanvas-wrapper">
-                                    <div class="container-menu">
-                                        <div class="action-menu">
-                                            <div class="close-event"></div>
-                                            <div class="open-event">
-                                                <!-- <div class="text">
-                        <span>Menu</span>
-                        <span>Close</span>
-                    </div> -->
-                                                <div class="burger">
-                                                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-close" data-v-649bbaab="">
-                                                        <line x1="13.788" y1="1.28816" x2="1.06011" y2="14.0161" stroke="currentColor" stroke-width="1.2"></line>
-                                                        <line x1="1.06049" y1="1.43963" x2="13.7884" y2="14.1675" stroke="currentColor" stroke-width="1.2"></line>
-                                                    </svg>
-                                                    <svg viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-burger" data-v-649bbaab="">
-                                                        <line x1="18" y1="0.6" y2="0.6" stroke="currentColor" stroke-width="1.2" data-v-649bbaab=""></line>
-                                                        <line x1="18" y1="5.7167" y2="5.7167" stroke="currentColor" stroke-width="1.2" data-v-649bbaab=""></line>
-                                                        <line x1="18" y1="10.8334" y2="10.8334" stroke="currentColor" stroke-width="1.2" data-v-649bbaab=""></line>
-                                                    </svg>
-                                                </div>
+                        <!-- social area end -->
+                        <div class="menu-btn">
+                            <div class="rts-offcanvas-wrapper">
+                                <div class="container-menu">
+                                    <div class="action-menu">
+                                        <div class="close-event"></div>
+                                        <div class="open-event">
+                                            <div class="burger">
+                                                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-close" data-v-649bbaab="">
+                                                    <line x1="13.788" y1="1.28816" x2="1.06011" y2="14.0161" stroke="currentColor" stroke-width="1.2"></line>
+                                                    <line x1="1.06049" y1="1.43963" x2="13.7884" y2="14.1675" stroke="currentColor" stroke-width="1.2"></line>
+                                                </svg>
+                                                <svg viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-burger" data-v-649bbaab="">
+                                                    <line x1="18" y1="0.6" y2="0.6" stroke="currentColor" stroke-width="1.2" data-v-649bbaab=""></line>
+                                                    <line x1="18" y1="5.7167" y2="5.7167" stroke="currentColor" stroke-width="1.2" data-v-649bbaab=""></line>
+                                                    <line x1="18" y1="10.8334" y2="10.8334" stroke="currentColor" stroke-width="1.2" data-v-649bbaab=""></line>
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rts-fs-menu">
-                                        <div class="rts-fs-container row">
-
-                                            <div class="rts-fs--nav col-12 col-md-6">
-                                                <ul id="primary-menu" class="navbar-nav-button">
-                                                    <li id="menu-item-76" class="menu-item menu-item-has-children">
-                                                        <a href="#">Home<span><svg height="24" viewBox="0 0 24 24" width="24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="heroicon-ui"
-                                        d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
-                                    </path>
-                                </svg></span></a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item menu-item-home current-menu-item page_item">
-                                                                <a href="index.html" aria-current="page">Digital Agency</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="index-two.html">Creative Agency</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="index-three.html">Personal Portfolio</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="index-four.html">Design Agency</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="index-five.html">Creative Portfolio</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="index-six.html">Business Agency</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li id="menu-item-767" class="menu-item menu-item-has-children">
-                                                        <a href="#">Showcase One<span><svg height="24" viewBox="0 0 24 24" width="24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="heroicon-ui"
-                                        d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
-                                    </path>
-                                </svg></span></a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item menu-item-home current-menu-item page_item">
-                                                                <a href="showcase-horizontal.html" aria-current="page">Horizontal Slider</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="showcase-vertical-slider.html">Vertical Slider</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="showcase-carousel.html">Showcase Carousel</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="showcase-vertical-scroll.html">Vertical Scroll</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="showcase-parallax-slider.html">Parallax Slider</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li id="menu-item-768" class="menu-item menu-item-has-children">
-                                                        <a href="#">Showcase Two<span><svg height="24" viewBox="0 0 24 24" width="24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="heroicon-ui"
-                                        d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
-                                    </path>
-                                </svg></span></a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item menu-item-home current-menu-item page_item">
-                                                                <a href="showcase-grid-slider.html" aria-current="page">Showcase Grid Slider</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="showcase-vertical-split.html">Vertical Split</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="showcase-interactive-links.html">Interactive Links</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="showcase-interactive-list.html">Interactive Lists</a>
-                                                            </li>
-                                                            <li class="menu-item">
-                                                                <a href="showcase-interactive-reveal.html">Interactive Reveal</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#">Portfolio<span><svg height="24" viewBox="0 0 24 24" width="24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="heroicon-ui"
-                                        d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
-                                    </path>
-                                </svg></span></a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item menu-item-has-children">
-                                                                <a href="#">Portfolio Grid <span><svg height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path class="heroicon-ui"
-                                            d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
-                                        </path>
-                                    </svg></span></a>
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-item"><a href="portfolio-grid.html">Grid 2 Column</a></li>
-                                                                    <li class="menu-item"><a href="portfolio-grid-3column.html">Grid 3 Column</a></li>
-                                                                    <li class="menu-item"><a href="portfolio-full-width.html">Grid Full Width</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="menu-item menu-item-has-children">
-                                                                <a href="#">Portfolio List <span><svg height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path class="heroicon-ui"
-                                            d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
-                                        </path>
-                                    </svg></span></a>
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-item"><a href="portfolio-two.html">Portfolio List</a></li>
-                                                                    <li class="menu-item"><a href="showcase-interactive-list.html">Interactive Lists</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="menu-item"><a href="portfolio-one.html">Portfolio Masonry</a></li>
-                                                            <li class="menu-item"><a href="portfolio-filter.html">Portfolio Filter</a></li>
-                                                            <li class="menu-item menu-item-has-children">
-                                                                <a href="#">Portfolio Details <span><svg height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path class="heroicon-ui"
-                                            d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
-                                        </path>
-                                    </svg></span></a>
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-item"><a href="portfolio-details.html">Portfolio Details</a></li>
-                                                                    <li class="menu-item"><a href="portfolio-details-two.html">Portfolio Details Two</a></li>
-                                                                    <li class="menu-item"><a href="portfolio-details-three.html">Portfolio Details Three</a></li>
-                                                                    <li class="menu-item"><a href="portfolio-details-four.html">Portfolio Details Four</a></li>
-                                                                    <li class="menu-item"><a href="portfolio-details-slider.html">Portfolio Details Slider</a></li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#">Pages
-                                                            <span>
-                                <svg height="24" viewBox="0 0 24 24" width="24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path class="heroicon-ui"
-                                            d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
-                                        </path>
-                                </svg>
-                            </span>
-                                                        </a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item"><a href="about.html">About Me</a></li>
-                                                            <li class="menu-item"><a href="service-1.html">Services V.1</a></li>
-                                                            <li class="menu-item"><a href="service-2.html">Services V.2</a></li>
-                                                            <li class="menu-item"><a href="service-3.html">Services V.3</a></li>
-                                                            <li class="menu-item"><a href="service-details.html">Services details</a></li>
-                                                            <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
-                                                            <li class="menu-item"><a href="error.html">404 Page</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item menu-item-has-children">
-                                                        <a href="#">News<span><svg height="24" viewBox="0 0 24 24" width="24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path class="heroicon-ui"
-                                        d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
-                                    </path>
-                                </svg></span></a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item"><a href="blog.html">Our Blog</a></li>
-                                                            <li class="menu-item"><a href="blog-sidebar.html">Blog Sidebar Right</a></li>
-                                                            <li class="menu-item"><a href="blog-sidebar-left.html">Blog Sidebar Left</a></li>
-                                                            <li class="menu-item menu-item-has-children">
-                                                                <a href="#">Blog Details<span><svg height="24" viewBox="0 0 24 24" width="24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path class="heroicon-ui"
-                                                d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z">
-                                            </path>
-                                        </svg></span></a>
-                                                                <ul class="sub-menu">
-                                                                    <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
-                                                                    <li class="menu-item"><a href="blog-details-two.html">Blog Details Two</a></li>
-                                                                    <li class="menu-item"><a href="blog-detailsleft-sidebar.html">Blog Details Left</a></li>
-                                                                    <li class="menu-item"><a href="blog-detailsright-sidebar.html">Blog Details Right</a></li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="rts-fs--contacts col-12 col-md-6">
-                                                <div class="contact-inner">
-                                                    <div class="contact-information">
-                                                        <h2 class="heading-title">Our Office</h2>
+                                </div>
+                                <div class="rts-fs-menu">
+                                    <div class="rts-fs-container row">
+                                        <div class="rts-fs--nav col-12 col-md-6">
+                                            <ul id="primary-menu" class="navbar-nav-button">
+                                                <li class="menu-item">
+                                                    <a href="{{ url('/') }}">Home</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="{{ url('/about') }}">About</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="{{ url('/services') }}">Services</a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="{{ url('/contact') }}">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="rts-fs--contacts col-12 col-md-6">
+                                            <div class="contact-inner">
+                                                <div class="contact-information">
+                                                    <h2 class="heading-title">Contact Me</h2>
                                                         <div class="address">
                                                             <ul>
                                                                 <li>
-                                                                    <p>98 Post St, Maxuel Street, Frankfurt</p>
+                                                                    <p>Deira,Dubai
+</p>
                                                                 </li>
-                                                                <li>
-                                                                    <p>575 Market St, Maxuel Street, Frankfurt</p>
-                                                                </li>
+                                                              
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -332,22 +208,20 @@
                                                         <h2 class="heading-title">Get In Touch</h2>
                                                         <div class="contact">
                                                             <ul>
-                                                                <li><a href="mailto:information.mighty.com" class="mail">information.mighty.com</a></li>
-                                                                <li><a href="tel:28586235932159" class="number">+2858 62359 32159</a></li>
+                                                                <li><a href="fadhilroshan22@gmail.com " class="mail">fadhilroshan22@gmail.com </a></li>
+                                                                <li><a href="tel:+971554074525" class="number">+971554074525‬
+</a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="rts-social-area-one">
                                                             <ul>
-                                                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                                                                <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
+                                                                 <li><a href="https://wa.me/918943068962" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a href="https://www.instagram.com/fadhil__roshan" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/fadhil-roshan-157819245/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
                                                             </ul>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -358,7 +232,8 @@
             </div>
         </div>
     </div>
-    <!-- header area two end -->
+</div>
+<!-- header area two end -->
 
     <!-- Scripts style two End -->
 
@@ -523,27 +398,7 @@
 </div>
 
 
-        <!-- brand area start -->
-        <div class="rts-brand-area rts-section-gapBottom bg-dark-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="brand-style-one">
-                            <p class="title-brand">WE WORKED WITH GLOBAL LARGEST BRANDS</p>
-                            <div class="brand-wrapper">
-                                <a href="#"><img src="assets/images/brand/01.png" alt="brand"></a>
-                                <a href="#"><img src="assets/images/brand/02.png" alt="brand"></a>
-                                <a href="#"><img src="assets/images/brand/03.png" alt="brand"></a>
-                                <a href="#"><img src="assets/images/brand/04.png" alt="brand"></a>
-                                <a href="#"><img src="assets/images/brand/05.png" alt="brand"></a>
-                                <a href="#"><img src="assets/images/brand/06.png" alt="brand"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- brand area end -->
+       
 
         <!-- cta area start -->
         <div class="cta-main-wrapper-three rts-section-gapBottom">
@@ -556,7 +411,7 @@
                                     IN MIND?</h3>
                             </div>
                             <div class="right">
-                                <a href="service-details.html" class="rts-btn btn-primary btn-radious">Let’s Talk</a>
+                                <a href="{{ url('/contact') }}" class="rts-btn btn-primary btn-radious">Let’s Talk</a>
                             </div>
                         </div>
                     </div>
@@ -569,67 +424,67 @@
 
 
 
-    <!-- rts footer two area start -->
-    <div class="rts-footer-two-area bg-footer-2 bg_image-1">
-        <div class="container-140">
-            <div class="row">
-                <div class="col-lg-12 pt--130 pt_sm--60 pb--100 pb_sm--60">
-                    <div class="footer-two-wrapper-content">
-                        <!-- footer left start -->
-                        <div class="footer-left-two">
-                            <a href="index.html" class="logo">
-                                <img src="assets/images/logo/03.svg" alt="logo">
-                            </a>
-                            <p class="disc">
-                                Teor facilis porta maurs ligula vivamus <br> nullam laoreet pharetra posuere.
-                            </p>
-                            <div class="rts-social-area-one">
-                                <ul>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- footer left end -->
+<!-- rts footer two area start -->
+<div class="rts-footer-two-area bg-footer-2 bg_image">
+    <div class="container-n">
+        <div class="row">
+            <div class="col-lg-12 pt--130 pt_sm--60 pb--100 pb_sm--50">
+                <div class="footer-two-wrapper-content">
+                   <!-- footer left start -->
+<div class="footer-left-two">
+    <a href="{{ url('/') }}" class="logo">
+        <h2 class="text-logo">Fadhil Roshan.</h2>
+    </a>
+    <p class="disc">
+        A Marketing Proffessional enthusiast with a strong <br>passion for the PR industry, I excel in content creations, <br>particularly in areas such as Editing and Graphic design
+    </p>
+    <div class="rts-social-area-one">
+        <ul>
+            <li><a href="https://wa.me/918943068962" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/fadhil__roshan" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/fadhil-roshan-157819245/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </div>
+</div>
+<!-- footer left end -->
 
-                        <!-- footer right area start -->
-                        <div class="footer-right-two">
-                            <!-- contact info -->
-                            <div class="contact-information">
-                                <h5 class="title">Contact Info</h5>
-                                <a href="#" class="map">Maxuel Street, Frankfurt <br> 2589 Germany.</a>
-                                <a href="#" class="mail">information.mighty.com</a>
-                                <a href="tel:28586235932159" class="number">+2858 62359 32159</a>
-                            </div>
-                            <!-- contact info end -->
-                            <!-- contact info -->
-                            <div class="contact-information input">
-                                <h5 class="title">Subscribe Newsletter</h5>
-                                <p class="map">Subscribe our newsletter for future updates. don’t <br> worry we don’t spam your email address</p>
-                                <form action="#" class="form-footer-2">
-                                    <label for="email-1"><i class="fa-regular fa-envelope"></i></label>
-                                    <input id="email-1" type="email" placeholder="Enter your email..." required>
-                                    <button type="submit">Subscribe</button>
-                                </form>
-                            </div>
-                            <!-- contact info end -->
+                    <!-- footer right area start -->
+                    <div class="footer-right-two">
+                        <!-- contact info -->
+                        <div class="contact-information">
+                            <h5 class="title">Contact Info</h5>
+                            <a href="#" class="map">Deira,Dubai
+
+                            <a href="#" class="mail">fadhilroshan22@gmail.com </a>
+                            <a href="#" class="number">+971554074525‬
+</a>
                         </div>
-                        <!-- footer right area end -->
+                        <!-- contact info end -->
+                        <!-- quick links -->
+                        <div class="contact-information input">
+                            <h5 class="title">Quick Links</h5>
+                            <a href="{{ url('/') }}" class="map">Home</a>
+                            <a href="{{ url('/about') }}" class="map">About</a>
+                            <a href="{{ url('/services') }}" class="map">Services</a>
+                            <a href="{{ url('/contact') }}" class="map">Contact</a>
+                        </div>
+                        <!-- quick links end -->
                     </div>
+                    <!-- footer right area end -->
                 </div>
-                <div class="col-lg-12">
-                    <!-- copyright-area-start -->
-                    <div class="copy-right-area-start-two">
-                        <p class="left">2023 © Mighty. All rights reserved.</p>
-                    </div>
-                    <!-- copyright-area-end -->
+            </div>
+            <div class="col-lg-12">
+                <!-- copyright-area-start -->
+                <div class="copy-right-area-start-two">
+                    <p class="left">2025 © FadhilRoshan. All rights reserved.</p>
+                    
                 </div>
+                <!-- copyright-area-end -->
             </div>
         </div>
     </div>
-    <!-- rts footer two area end -->
+</div>
+<!-- rts footer two area end -->
 
 
     <!-- Scripts style two -->
