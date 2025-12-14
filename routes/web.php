@@ -18,6 +18,14 @@ Route::get('/services', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-
+Route::get('/developing', function () {
+    return view('developing');
+});
+Route::get('/branding', function () {
+    return view('branding');
+});
+Route::get('/content', function () {
+    return view('content');
+});
 // Contact form submission route
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
