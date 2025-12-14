@@ -564,31 +564,31 @@ From shaping the message to designing the visuals, I focus on creating work that
                         <div class="skill-area-h3 rts-slide-up-gsap">
                             <!-- single -->
                             <div class="single">
-                                <i class="fa-regular fa-plus"></i>
+                                <i class="fa-solid fa-arrow-right"></i>
                                 <p>Integrated Marketing Strategy</p>
                             </div>
                             <!-- single end -->
                             <!-- single -->
                             <div class="single">
-                                <i class="fa-regular fa-plus"></i>
-                                <p>Content Creation & Visuals</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <p>PR Campaigns</p>
                             </div>
                             <!-- single end -->
                         </div>
                         <div class="skill-area-h3 rts-slide-up-gsap mt--30">
                             <div class="single">
-                                <i class="fa-regular fa-plus"></i>
+                                <i class="fa-solid fa-arrow-right"></i>
                                 <p>Communication & Stakeholder Mgmt</p>
                             </div>
                             <!-- single end -->
                             <!-- single -->
                             <div class="single">
-                                <i class="fa-regular fa-plus"></i>
+                                <i class="fa-solid fa-arrow-right"></i>
                                 <p>Brand Development</p>
                             </div>
                             <!-- single end -->
                         </div>
-                        <a href="{{ url('/about') }}" class="learn-more-btn">More About Us<i
+                        <a href="{{ url('/about') }}" class="learn-more-btn">More About Me<i
                                 class="fa-solid fa-arrow-up-right"></i></a>
                     </div>
                 </div>
@@ -635,13 +635,13 @@ From shaping the message to designing the visuals, I focus on creating work that
                                 <div class="sm-service-area-wrapper">
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                        <i class="fa-solid fa-arrow-right"></i>
                                         <p>Loudimc </p>
                                     </div>
                                     <!-- sm-service end -->
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                        <i class="fa-solid fa-arrow-right"></i>
                                         <p>Calicut,Kerala</p>
                                     </div>
                                     <!-- sm-service end -->
@@ -674,13 +674,13 @@ From shaping the message to designing the visuals, I focus on creating work that
                                 <div class="sm-service-area-wrapper">
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                        <i class="fa-solid fa-arrow-right"></i>
                                         <p>Football Geek</p>
                                     </div>
                                     <!-- sm-service end -->
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                        <i class="fa-solid fa-arrow-right"></i>
                                         <p>Navi, Mumbai</p>
                                     </div>
                                     <!-- sm-service end -->
@@ -714,13 +714,13 @@ From shaping the message to designing the visuals, I focus on creating work that
                                 <div class="sm-service-area-wrapper">
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                        <i class="fa-solid fa-arrow-right"></i>
                                         <p>Ajfan Catering</p>
                                     </div>
                                     <!-- sm-service end -->
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                        <i class="fa-solid fa-arrow-right"></i>
                                         <p>Calicut, Kerala</p>
                                     </div>
                                     <!-- sm-service end -->
@@ -745,14 +745,14 @@ From shaping the message to designing the visuals, I focus on creating work that
     <!-- rts service area end -->
     <!-- rts about area three end -->
 
-    <!-- case studies start -->
+     <!-- case studies start -->
     <div class="rts-case-studies-three rts-section-gap case-three-bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="title-area-left-three-large">
                         <span>Expertised in</span>
-                        <h2 class="title quote">My Services</h2>
+                        <h2 class="title quote">Case Studies</h2>
                         <p class="left-m-para rts-text-anim">
                             Showcasing a range of creative and strategic services designed to help <br>brands communicate effectively and stand out in today's <br>digital landscape.
                         </p>
@@ -761,6 +761,7 @@ From shaping the message to designing the visuals, I focus on creating work that
             </div>
             <div class="row g-24 align-items-center mt--90 mt_md--50 mt_sm--0">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                   
                     <!-- wrapper case inner -->
                     <div class="single-case-main-wrapper">
                         <a href="portfolio-details.html" class="pli-image-link">
@@ -774,7 +775,7 @@ From shaping the message to designing the visuals, I focus on creating work that
                         </a> <!-- /.pli-image-link -->
                         <div class="inner-content">
                             <span>Develop</span>
-                            <a href="{{ url('/services') }}">Business Developing </a>
+                            <a href="{{ url('/developing') }}">Business Developing </a>
                         </div>
                     </div>
                     <!-- wrapper case inner start -->
@@ -791,12 +792,16 @@ From shaping the message to designing the visuals, I focus on creating work that
                         </a> <!-- /.pli-image-link -->
                         <div class="inner-content">
                             <span>Develop</span>
-                            <a href="{{ url('/services') }}">Branding</a>
+                            <a href="{{ url('/branding') }}">Branding</a>
                         </div>
                     </div>
+
                     <!-- wrapper case inner start -->
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <!-- wrapper case inner -->
-                    <div class="single-case-main-wrapper">
+                   <div class="single-case-main-wrapper">
                         <a href="portfolio-details.html" class="pli-image-link">
                             <div class="pli-image-holder">
                                 <!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pli-info-overlay" is enabled on "portfolio-list". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
@@ -808,13 +813,11 @@ From shaping the message to designing the visuals, I focus on creating work that
                         </a> <!-- /.pli-image-link -->
                         <div class="inner-content">
                             <span>Develop</span>
-                            <a href="{{ url('/services') }}">PR Executive</a>
+                            <a href="{{ url('/pr') }}">PR Campaigns</a>
                         </div>
                     </div>
-                    <!-- wrapper case inner start -->
 
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <!-- wrapper case inner start -->
                     <!-- wrapper case inner -->
                     <div class="single-case-main-wrapper">
                         <a href="portfolio-details.html" class="pli-image-link">
@@ -828,41 +831,7 @@ From shaping the message to designing the visuals, I focus on creating work that
                         </a> <!-- /.pli-image-link -->
                         <div class="inner-content">
                             <span>Strategy</span>
-                            <a href="{{ url('/services') }}">Content Strategy</a>
-                        </div>
-                    </div>
-                    <!-- wrapper case inner start -->
-                    <!-- wrapper case inner -->
-                    <div class="single-case-main-wrapper">
-                        <a href="portfolio-details.html" class="pli-image-link">
-                            <div class="pli-image-holder">
-                                <!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pli-info-overlay" is enabled on "portfolio-list". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-                                <figure class="pli-image">
-                                    <img class="anim-image-parallax tt-lazy" src="assets/images/perform.jpg" data-src="assets/images/product/79.jpg" alt="image">
-                                </figure> <!-- /.pli-image -->
-                            </div> <!-- /.pli-image-holder -->
-
-                        </a> <!-- /.pli-image-link -->
-                        <div class="inner-content">
-                            <span>Perform</span>
-                            <a href="{{ url('/services') }}">Performance</a>
-                        </div>
-                    </div>
-                    <!-- wrapper case inner start -->
-                     <!-- wrapper case inner -->
-                    <div class="single-case-main-wrapper">
-                        <a href="portfolio-details.html" class="pli-image-link">
-                            <div class="pli-image-holder">
-                                <!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pli-info-overlay" is enabled on "portfolio-list". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
-                                <figure class="pli-image">
-                                    <img class="anim-image-parallax tt-lazy" src="assets/images/market.jpg" data-src="assets/images/product/79.jpg" alt="image">
-                                </figure> <!-- /.pli-image -->
-                            </div> <!-- /.pli-image-holder -->
-
-                        </a> <!-- /.pli-image-link -->
-                        <div class="inner-content">
-                            <span>Research</span>
-                            <a href="{{ url('/services') }}">Market Research</a>
+                            <a href="{{ url('/content') }}">Content Strategy</a>
                         </div>
                     </div>
                     <!-- wrapper case inner start -->
@@ -870,6 +839,7 @@ From shaping the message to designing the visuals, I focus on creating work that
                 </div>
                 <a href="{{ url('/services') }}" class="learn-more-btn text-center">View More <i
                         class="fa-solid fa-arrow-up-right"></i></a>
+
             </div>
         </div>
     </div>
@@ -915,14 +885,14 @@ Relations
                                 <div class="sm-service-area-wrapper">
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                        <i class="fa-solid fa-arrow-right"></i>
                                         <p>Amity University 
  </p>
                                     </div>
                                     <!-- sm-service end -->
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                       <i class="fa-solid fa-arrow-right"></i>
                                         <p>Mumbai</p>
                                     </div>
                                     <!-- sm-service end -->
@@ -955,13 +925,13 @@ Relations
                                 <div class="sm-service-area-wrapper">
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                        <i class="fa-solid fa-arrow-right"></i>
                                         <p>ST. Joseph's College</p>
                                     </div>
                                     <!-- sm-service end -->
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                        <i class="fa-solid fa-arrow-right"></i>
                                         <p>Devagiri, Calicut</p>
                                     </div>
                                     <!-- sm-service end -->
@@ -995,13 +965,13 @@ Relations
                                 <div class="sm-service-area-wrapper">
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                       <i class="fa-solid fa-arrow-right"></i>
                                         <p>Thiruvangoor HSS</p>
                                     </div>
                                     <!-- sm-service end -->
                                     <!-- sm-service -->
                                     <div class="sm-service">
-                                        <i class="fa-regular fa-plus"></i>
+                                        <i class="fa-solid fa-arrow-right"></i>
                                         <p>Kozhikode, Kerala</p>
                                     </div>
                                     <!-- sm-service end -->
@@ -1025,129 +995,7 @@ Relations
     </div>
     <!-- rts service area end -->
 
-    <div class="rts-testimonials-area rts-section-gap bg-dark-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="swiper-testimonials-wrapper-main-2">
-
-                        <!-- Swiper -->
-                        <div class="swiper mySwiper-testimonials-two swiper-container-horizontal">
-                            <div class="swiper-wrapper" style="transform: translate3d(-1275px, 0px, 0px); transition-duration: 0ms;">
-                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 1175px; margin-right: 100px;">
-                                    <!-- single testimonials-area -->
-                                    <div class="single-testimonial-2">
-                                        <div class="testimonial-quote-icon">
-                                            <img src="assets/images/testimonials/07.png" alt="testimonial">
-                                        </div>
-                                        <div class="left-area">
-                                            <img src="assets/images/testimonials/04.png" alt="testimonials">
-                                        </div>
-                                        <div class="content-area mt--20">
-                                            <p class="disc">“Placat facilsi quisque aliquet flis augue nunc nullam <br>
-                                                gravida est ac bibenum, pulvinar in ligula vel sociosqu <br> ultricies
-                                                fusce cum cursus fermentum”</p>
-                                            <div class="author">
-                                                <p class="name">Adam Daniel Smith</p>
-                                                <p class="designation">/ Product Designer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single testimonials-area end -->
-                                </div>
-                                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 1175px; margin-right: 100px;">
-                                    <!-- single testimonials-area -->
-                                    <div class="single-testimonial-2">
-                                        <div class="testimonial-quote-icon">
-                                            <img src="assets/images/testimonials/07.png" alt="testimonial">
-                                        </div>
-                                        <div class="left-area">
-                                            <img src="assets/images/testimonials/04.png" alt="testimonials">
-                                        </div>
-                                        <div class="content-area mt--20">
-                                            <p class="disc">“Placat facilsi quisque aliquet flis augue nunc nullam <br>
-                                                gravida est ac bibenum, pulvinar in ligula vel sociosqu <br> ultricies
-                                                fusce cum cursus fermentum”</p>
-                                            <div class="author">
-                                                <p class="name">Adam Daniel Smith</p>
-                                                <p class="designation">/ Product Designer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single testimonials-area end -->
-                                </div>
-                                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 1175px; margin-right: 100px;">
-                                    <!-- single testimonials-area -->
-                                    <div class="single-testimonial-2">
-                                        <div class="testimonial-quote-icon">
-                                            <img src="assets/images/testimonials/07.png" alt="testimonial">
-                                        </div>
-                                        <div class="left-area">
-                                            <img src="assets/images/testimonials/04.png" alt="testimonials">
-                                        </div>
-                                        <div class="content-area mt--20">
-                                            <p class="disc">“Placat facilsi quisque aliquet flis augue nunc nullam <br>
-                                                gravida est ac bibenum, pulvinar in ligula vel sociosqu <br> ultricies
-                                                fusce cum cursus fermentum”</p>
-                                            <div class="author">
-                                                <p class="name">Adam Daniel Smith</p>
-                                                <p class="designation">/ Product Designer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single testimonials-area end -->
-                                </div>
-                                <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 1175px; margin-right: 100px;">
-                                    <!-- single testimonials-area -->
-                                    <div class="single-testimonial-2">
-                                        <div class="testimonial-quote-icon">
-                                            <img src="assets/images/testimonials/07.png" alt="testimonial">
-                                        </div>
-                                        <div class="left-area">
-                                            <img src="assets/images/testimonials/04.png" alt="testimonials">
-                                        </div>
-                                        <div class="content-area mt--20">
-                                            <p class="disc">“Placat facilsi quisque aliquet flis augue nunc nullam <br>
-                                                gravida est ac bibenum, pulvinar in ligula vel sociosqu <br> ultricies
-                                                fusce cum cursus fermentum”</p>
-                                            <div class="author">
-                                                <p class="name">Adam Daniel Smith</p>
-                                                <p class="designation">/ Product Designer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single testimonials-area end -->
-                                </div>
-                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1175px; margin-right: 100px;">
-                                    <!-- single testimonials-area -->
-                                    <div class="single-testimonial-2">
-                                        <div class="testimonial-quote-icon">
-                                            <img src="assets/images/testimonials/07.png" alt="testimonial">
-                                        </div>
-                                        <div class="left-area">
-                                            <img src="assets/images/testimonials/04.png" alt="testimonials">
-                                        </div>
-                                        <div class="content-area mt--20">
-                                            <p class="disc">“Placat facilsi quisque aliquet flis augue nunc nullam <br>
-                                                gravida est ac bibenum, pulvinar in ligula vel sociosqu <br> ultricies
-                                                fusce cum cursus fermentum”</p>
-                                            <div class="author">
-                                                <p class="name">Adam Daniel Smith</p>
-                                                <p class="designation">/ Product Designer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- single testimonials-area end -->
-                                </div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="rts-marquree-area-start marque-2">
         <div class="container-full">
