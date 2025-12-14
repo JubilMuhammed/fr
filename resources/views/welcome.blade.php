@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-style-mode" content="1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/tlogo.png">
-    <title>Fadhil-Roshan | Portfolio</title>
+    <title>FFFadhil-Roshan | Portfolio</title>
     <link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css">
     <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
     <link rel="stylesheet" href="assets/css/vendor/metismenu.css">
