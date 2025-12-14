@@ -764,7 +764,7 @@ From shaping the message to designing the visuals, I focus on creating work that
                    
                     <!-- wrapper case inner -->
                     <div class="single-case-main-wrapper">
-                        <a href="portfolio-details.html" class="pli-image-link">
+                        <a href="{{ url('/developing') }}" class="pli-image-link">
                             <div class="pli-image-holder">
                                 <!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pli-info-overlay" is enabled on "portfolio-list". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
                                 <figure class="pli-image">
@@ -781,7 +781,7 @@ From shaping the message to designing the visuals, I focus on creating work that
                     <!-- wrapper case inner start -->
                     <!-- wrapper case inner -->
                     <div class="single-case-main-wrapper">
-                        <a href="portfolio-details.html" class="pli-image-link">
+                        <a href="{{ url('/branding') }}" class="pli-image-link">
                             <div class="pli-image-holder">
                                 <!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pli-info-overlay" is enabled on "portfolio-list". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
                                 <figure class="pli-image">
@@ -802,7 +802,7 @@ From shaping the message to designing the visuals, I focus on creating work that
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <!-- wrapper case inner -->
                    <div class="single-case-main-wrapper">
-                        <a href="portfolio-details.html" class="pli-image-link">
+                        <a href="{{ url('/pr') }}" class="pli-image-link">
                             <div class="pli-image-holder">
                                 <!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pli-info-overlay" is enabled on "portfolio-list". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
                                 <figure class="pli-image">
@@ -820,7 +820,7 @@ From shaping the message to designing the visuals, I focus on creating work that
                     <!-- wrapper case inner start -->
                     <!-- wrapper case inner -->
                     <div class="single-case-main-wrapper">
-                        <a href="portfolio-details.html" class="pli-image-link">
+                        <a href="{{ url('/content') }}" class="pli-image-link">
                             <div class="pli-image-holder">
                                 <!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pli-info-overlay" is enabled on "portfolio-list". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
                                 <figure class="pli-image">
